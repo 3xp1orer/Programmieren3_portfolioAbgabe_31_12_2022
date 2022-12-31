@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <!---Meta--->
+        <meta charset="utf-8">
+        <meta name ="viewpoint" content="width=device-width, initial-scale=1">
+
+        <!---boxicons--->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!---remixicons link--->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!---google fonts link--->
+        <link rel="preconnect" href="https://fonts.google.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.google.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+        
+        <!---js start datei--->
+        <script language="JavaScript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+        <script src="main.js" async defer></script>
+        <script src="Item.js" async defer></script>
+        <!---css link--->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Inventory</title>
+    </head>
+    <body>
+  
+        <header>
+
+            <a href="#" class="logo">Inventory</a>
+            <div class="search">
+                <div class="searchicon"></div>
+                <div class="searchinput">
+                    <input type="search" placeholder="search..." id="mysearch">
+                </div>
+            </div>
+            <ul class="navlist">
+                <li><a href="file:///C:/Users/Satoshi/Prog3/testt/Heatmap/index.html">Home/Heatmap</a></li>
+                <li><a href="#" id="items" onclick="onItem()">Items</a></li>
+                <li><a href="#" id="location" onclick="onLocation()">Location</a></li>
+                <li><a href="#" id="borrower" onclick="onBorrower()">Deptor/Borrower</a></li>
+            </ul>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
+        <div id="items_page">
+            <table id="dynamic_list">
+                <thead>
+                    <tr class="listitemsitem">
+                        <th class="colId">id</th>
+                        <th class="colname">name</th>
+                        <th class="colcategory">category</th>
+                        <th class="colprice">price</th>
+                        <th class="colserialnumber">serialnumber</th>
+                        <th class="colpurchease_date">purchease date</th>
+                        <th class="colborrowing_history">borrowing history</th>
+                        <th class="coldestruction_hostory">destruction hostory</th>
+                        <th class="location">location</th>
+                        <th class="status">status</th>
+                    </tr>
+                </thead>
+                <tbody class="itemslist" id="itemslist">
+                    <tr id="dataRow">
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="center">
+            <button id="createNew_item">create new item</button>
+        </div>
+        <div class="popup">
+            <div class="close-btn">&times;</div>
+            <form class="form">
+                <h2>Create new item</h2>
+                <div class="form-element">
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter name" required>
+                </div>
+                <div class="form-element">
+                    <label for="category">category</label>
+                    <select id="category" name="category" required>
+                        <option value="smartphone">smartphone</option>
+                        <option value="tablet">tablet</option>
+                        <option value="laptop">latop</option>
+                        <option value="pc">pc</option>
+                        <option value="powerloot">powerloot</option>
+                        <option value="connectors">connector</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="price">price</label>
+                    <input type="text" id="price" name="price" placeholder="Enter price" required>
+                </div>
+                <div class="form-element">
+                    <label for="serialnumber">serialnumber</label>
+                    <input type="text" id="serialnumber" name="serialnumber" placeholder="Enter serialnumber" >
+                </div>
+                <div class="form-element">
+                    <label for="date_of_purchase">date_of_purchase</label>
+                    <input type="text" id="date_of_purchase" name="date_of_purchase" placeholder="Enter date_of_purchase" >
+                </div>
+                
+                <div class="form-element">
+                    <label for="borrowing_history">borrowing_history</label>
+                    <input type="text" id="borrowing_history" name="borrowing_history" placeholder="Enter borrowing_history" >
+                </div>
+                <div class="form-element">
+                    <label for="destruction_history">destruction_history</label>
+                    <input type="text" id="destruction_history" name="destruction_history" placeholder="Enter destruction_history" >
+                </div>
+                <div class="form-element">
+                    <label for="location">location</label>
+                    <input type="text" id="location" name="location" placeholder="Enter location" >
+                </div>
+                <div class="form-element">
+                    <label for="status">status</label>
+                    <input type="text" id="status" name="status" placeholder="Enter status" >
+                </div>
+                <button id="createItem_button">create</button>
+                <button id ="editItem_button">edit</button>
+                <button id ="deleteItem_button">delete</button>
+            </form>
+        </div>
+        
+
+
+
+
+        <!---Heatmap Calender--->
+
+    </body>
+</html>

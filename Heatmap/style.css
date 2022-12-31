@@ -1,0 +1,56 @@
+.month {
+    width: 100px;
+    height: 100px;
+    padding: 6px;
+    border-radius: 6px;
+
+}
+
+#heatmap {
+    
+    width: 528px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+    align-items: stretch;
+    width: 648px;
+    margin: 10px;
+}
+#calendar {
+    align-items: flex;
+    background-color: rgb(216, 249, 0);
+    border-radius: 6px;
+}
+
+#body {
+    width: 100%;
+    background: url("C:/Users/Satoshi/Prog3/LaborInventar/Dancing.gif");
+    border: 10px rebeccapurple;
+    flex-direction: row;}
+
+#year {
+    margin: 44px;
+    border: 20px teal;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* gemeinsame klasse erstellen*/
+.time{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+#back {
+    margin: 5px;
+}
+#forward {
+    margin: 5px;
+}
